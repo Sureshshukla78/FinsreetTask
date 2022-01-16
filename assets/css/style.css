@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap');
+
+:root{
+    --dark:#2b2d42;
+    --light:#adb5bd;
+    --border:#dee2e6;
+    --border-btn:#edf2f4;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #24252A;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #Be2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+header nav{
+    background-color: #24252A;
+    padding: 1em 0;
+}
+header a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+}
+header .logo{
+    color: #80FFDB;
+    font-size: 32px;
+}
+header li, a, button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    /* color: #edf0f1; */
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20% 0px;
+}
+
+p{
+    padding: 0px 20% 10px;
+    font-size: 1rem;
+    color: white;
+}
+.power{
+    color: #80FFDB;
+    font-size: 1.3rem;
+}
+
+header button{
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+header .telegram{
+    background-color: #80FFDB;
+    padding: 8px;
+    font-weight: bold;
+}
+
+header .telegram .fab{
+    color: white;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.nav_links button{
+    font-size: 1.3rem;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+#site-main{
+    margin-top: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: 20px;
+}
+
+#site-main .container form{
+    margin: 2em 0;
+}
+
+table{
+    border-spacing: 2px;
+    width: 100%;
+    color: #fff;
+}
+
+.table td, .table th {
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    /* border-top: 1px solid var(--border); */
+}
+
+.table td > a.btn{
+    padding: .3em .1em;
+    font-size: 1em;
+    margin: 0 .2em;
+}
+
+/* table tr{
+    background-color: #ff;
+} */
+
+.table .thead-dark th{
+    color: rgb(99, 96, 96);
+    /* background-color: var(--dark); */
+    border-color: #32383e;
+}
+
+
+/* responsiveness */
+@media (max-width:1024px) {
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr{
+        border: 1px solid var(--border);
+    }
+
+    td{
+        border: none;
+        position: relative;
+    }
+}
+
+/* add user page styling */
+.form-title{
+    margin-top: 6em;
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 786px;
+    margin: auto;
+}

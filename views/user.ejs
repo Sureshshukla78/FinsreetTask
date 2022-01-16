@@ -1,0 +1,33 @@
+<!-- including header -->
+<%- include('partials/_header') %>
+    <!-- /including header -->
+
+    <!-- main section -->
+    <main id="site-main">
+        <div class="container">
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Last</th>
+                            <th>Buy / Sell Price</th>
+                            <th>Volume</th>
+                            <th>base_unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <%- include('partials/_show') %>
+                    </tbody>
+                </table>
+            </form>
+            <!-- /form handling -->
+
+        </div>
+    </main>
+    <!-- /main section -->
+    <!-- including footer -->
+    <%- include('partials/_footer') %>
+        <!-- /including footer -->

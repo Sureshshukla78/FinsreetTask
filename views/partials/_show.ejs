@@ -1,0 +1,10 @@
+<% for(var i=0; i<allData.length; i++){%>
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= allData[i].name%></td>
+        <td><%= allData[i].last%></td>
+        <td>₹<%= allData[i].buy%> / ₹<%=allData[i].sell%></td>
+        <td><%= allData[i].volume%></td>
+        <td><%= allData[i].baseUnit%></td>
+    </tr>
+    <%}%>
